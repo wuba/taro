@@ -111,7 +111,7 @@ export default class Index extends Component<never, any> {
 
   render() {
     return (
-      <ScrollView className='index' enableBackToTop>
+      <ScrollView className='index' enableBackToTop style={{ paddingBottom: 80 }}>
         <View className='index-hd'>
           <Image className='index-logo' src={logo} />
           <View className='index-desc'>
