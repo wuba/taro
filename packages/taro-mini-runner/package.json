@@ -48,7 +48,7 @@
     "@tarojs/shared": "3.3.0",
     "@tarojs/taro": "3.3.0",
     "@tarojs/taro-loader": "3.3.0",
-    "babel-loader": "8.2.1",
+    "babel-loader": "8.2.2",
     "copy-webpack-plugin": "5.1.2",
     "css": "2.2.4",
     "css-loader": "^3.0.0",
