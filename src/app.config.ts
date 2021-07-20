@@ -2,11 +2,12 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-19 17:06:06
+ * @LastEditTime: 2021-07-20 16:40:37
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
   pages: [
+    'pages/home/index',
     // 组件相关 start
     'pages/components/index',
     'pages/components/pages/view/view',
@@ -38,7 +39,13 @@ export default {
     'pages/components/pages/virtual-list/virtual-list',
     'pages/components/pages/movable-view/movable-view',
     // 组件相关 end
-    'pages/apis/index/index',
+    // api 相关 start
+    'pages/apis/index',
+    'pages/apis/pages/system/index',
+    'pages/apis/pages/interactive/index',
+    'pages/apis/pages/navigationBar/index',
+    'pages/apis/pages/background/index',
+    // api 相关 end
     'pages/about/index/index',
   ],
   window: {
@@ -52,13 +59,19 @@ export default {
       {
         iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
         selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
+        pagePath: 'pages/home/index',
+        text: '首页',
+      },
+      {
+        iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
+        selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
         pagePath: 'pages/components/index',
         text: '组件',
       },
       {
         iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
         selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
-        pagePath: 'pages/apis/index/index',
+        pagePath: 'pages/apis/index',
         text: 'API',
       },
       {
