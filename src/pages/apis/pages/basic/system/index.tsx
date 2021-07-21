@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-20 16:37:49
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-20 17:24:43
+ * @LastEditTime: 2021-07-21 10:25:19
  * @FilePath: /taro-react-native/src/pages/apis/pages/system/index.tsx
  */
 import { Component } from 'react'
@@ -63,12 +63,14 @@ export default class Index extends Component<any, any> {
         >
           clear
         </Button>
-        {Object.keys(info).map(key => {
-          const value = info[key];
-          return (
-            <View key={key}>{`${key}: ${value}`}</View>
-          )
-        })}
+        <View style={{padding: 20}}>
+          {Object.keys(info).map(key => {
+            const value = info[key];
+            return (
+              <View key={key}>{`${key}: ${value}`}</View>
+            )
+          })}
+        </View>
       </View>
     )
   }

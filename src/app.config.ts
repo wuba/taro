@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-20 16:40:37
+ * @LastEditTime: 2021-07-21 10:35:01
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -25,6 +25,7 @@ export default {
     'pages/components/pages/button/button',
     'pages/components/pages/text/text',
     'pages/components/pages/label/label',
+    'pages/components/pages/page-container/page-container',
     'pages/components/pages/picker/picker',
     'pages/components/pages/picker-view/picker-view',
     'pages/components/pages/rich-text/rich-text',
@@ -41,10 +42,10 @@ export default {
     // 组件相关 end
     // api 相关 start
     'pages/apis/index',
-    'pages/apis/pages/system/index',
-    'pages/apis/pages/interactive/index',
-    'pages/apis/pages/navigationBar/index',
-    'pages/apis/pages/background/index',
+    'pages/apis/pages/basic/system/index',
+    'pages/apis/pages/surface/interactive/index',
+    'pages/apis/pages/surface/navigationBar/index',
+    'pages/apis/pages/surface/background/index',
     // api 相关 end
     'pages/about/index/index',
   ],

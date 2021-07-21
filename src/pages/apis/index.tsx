@@ -2,14 +2,14 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-20 16:40:16
+ * @LastEditTime: 2021-07-21 10:32:51
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
 import { Component } from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import logo from "../asset/component/logo.png";
-import viewPng from "../asset/component/view.png";
+import surfacePng from "../asset/component/view.png";
 import contentPng from "../asset/component/content.png";
 import formPng from "../asset/component/form.png";
 import navPng from "../asset/component/nav.png";
@@ -20,7 +20,7 @@ import canvasPng from "../asset/component/canvas.png";
 import "./index.scss";
 
 const PNGS = {
-  viewPng,
+  surfacePng,
   contentPng,
   formPng,
   navPng,
@@ -57,7 +57,7 @@ export default class Index extends Component<never, any> {
           pages: []
         },
         {
-          id: "view",
+          id: "surface",
           name: "界面",
           open: false,
           pages: [
@@ -130,7 +130,7 @@ export default class Index extends Component<never, any> {
           <Image className='index-logo' src={logo} />
           <View className='index-desc'>
             <Text className='index-desc_text'>
-              以下将展示Taro官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。
+              以下将展示 Taro 官方 API 能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式。
             </Text>
           </View>
         </View>
@@ -150,11 +150,14 @@ export default class Index extends Component<never, any> {
                 return {
                   pageName: page.name,
                   page: page.id,
-                  url: `/pages/apis/pages/${page.id}/index`
+                  url: `/pages/apis/pages/${item.id}/${page.id}/index`
                 };
               });
               return item;
             }).map((item, index) => {
+              if (item._pages.length == 0) {
+                return null;
+              }
               return (
                 <View className='kind-list-item' key={index}>
                   <View
