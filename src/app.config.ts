@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-22 16:22:34
+ * @LastEditTime: 2021-07-22 18:19:05
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -55,29 +55,30 @@ export default {
     navigationBarTextStyle: 'black'
   },
   tabBar: {
+    color: '#333333',
     selectedColor: '#6190E8', // 主题色
     list: [
       {
-        iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
-        selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
+        iconPath: './assets/tabbar/project.png',
+        selectedIconPath: './assets/tabbar/project_selected.png',
         pagePath: 'pages/home/index',
-        text: '首页',
+        text: '项目',
       },
       {
-        iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
-        selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
+        iconPath: './assets/tabbar/component.png',
+        selectedIconPath: './assets/tabbar/component_selected.png',
         pagePath: 'pages/components/index',
         text: '组件',
       },
       {
-        iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
-        selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
+        iconPath: './assets/tabbar/api.png',
+        selectedIconPath: './assets/tabbar/api_selected.png',
         pagePath: 'pages/apis/index',
         text: 'API',
       },
       {
-        iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',
-        selectedIconPath: 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3220589324,939421850&fm=26&gp=0.jpg',
+        iconPath: './assets/tabbar/person.png',
+        selectedIconPath: './assets/tabbar/person_selected.png',
         pagePath: 'pages/about/index/index',
         text: '关于',
       },
