@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-20 12:09:30
+ * @LastEditTime: 2021-07-22 15:45:44
  * @FilePath: /taro-react-native/src/pages/home/index.tsx
  */
 import { Component } from 'react'
@@ -23,7 +23,7 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <View className='header'>
-          <Text>自定义标题</Text>
+          <Text className='header-title'>自定义标题</Text>
         </View>
         <Text>Hello world!</Text>
       </View>
