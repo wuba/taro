@@ -166,7 +166,7 @@
   },
   "dependencies": {
     "@types/babel__traverse": "^7.0.7",
-    "@types/react-reconciler": "0.26.1",
+    "@types/react-reconciler": "0.26.2",
     "rollup-plugin-copy": "^3.4.0"
   }
 }
