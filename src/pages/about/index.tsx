@@ -2,8 +2,8 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:39
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-22 17:24:07
- * @FilePath: /taro-react-native/src/pages/about/index/index.tsx
+ * @LastEditTime: 2021-07-22 18:23:54
+ * @FilePath: /taro-react-native/src/pages/about/index.tsx
  */
 import { Component } from 'react'
 import { View, Image, Text } from '@tarojs/components'

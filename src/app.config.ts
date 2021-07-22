@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-22 18:19:05
+ * @LastEditTime: 2021-07-22 18:24:37
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -46,7 +46,7 @@ export default {
     'pages/apis/pages/surface/navigationBar/index',
     'pages/apis/pages/surface/background/index',
     // api 相关 end
-    'pages/about/index/index',
+    'pages/about/index',
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -79,7 +79,7 @@ export default {
       {
         iconPath: './assets/tabbar/person.png',
         selectedIconPath: './assets/tabbar/person_selected.png',
-        pagePath: 'pages/about/index/index',
+        pagePath: 'pages/about/index',
         text: '关于',
       },
     ]
