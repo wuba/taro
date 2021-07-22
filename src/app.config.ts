@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-21 15:05:22
+ * @LastEditTime: 2021-07-22 16:22:34
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -55,6 +55,7 @@ export default {
     navigationBarTextStyle: 'black'
   },
   tabBar: {
+    selectedColor: '#6190E8', // 主题色
     list: [
       {
         iconPath: 'https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1907997288,1833327008&fm=26&gp=0.jpg',

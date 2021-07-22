@@ -1,5 +1,10 @@
 @import '../../styles/mixins.scss';
 
+.index {
+    padding-top: 300px;
+    flex: 1;
+}
+
 .header {
     flex-direction: row;
     align-items: center;
@@ -9,5 +14,23 @@
     &-title {
         color: #ffffff;
         font-size: $font-size-xl;
+    }
+}
+
+.info {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    &-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        margin-bottom: $spacing-v-xl;
+    }
+    &-text {
+        font-size: $font-size-base;
+        color: $color-text-paragraph;
+        line-height: 40px;
     }
 }
