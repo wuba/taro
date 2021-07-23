@@ -13,17 +13,11 @@ import './index.scss'
 export default class Index extends Component {
 
   onPress = () => {
-    // try {
-    //   NativeModules.RCTDevMenu.loadBundleByIp();
-    // } catch (error) {
-    //   console.log('调用失败：', error);
-    // }
     try {
-      const CalendarManager = NativeModules.CalendarManager;
-      // console.log(9999, NativeModules.CalendarManager)
-      CalendarManager.addEvent(
-        'Birthday Party',
-        '4 Privet Drive, Surrey'
+      const DevManager = NativeModules.RNDevManager;
+      DevManager.loadBundleByBundleUrl(
+        '10.249.42.34:8081',
+        'index'
       );
     } catch (error) {
       console.log("ccccc", error);
