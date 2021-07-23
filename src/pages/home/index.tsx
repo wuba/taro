@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-22 18:34:52
+ * @LastEditTime: 2021-07-23 16:02:04
  * @FilePath: /taro-react-native/src/pages/home/index.tsx
  */
 import { Component } from 'react'
@@ -13,10 +13,20 @@ import './index.scss'
 export default class Index extends Component {
 
   onPress = () => {
+    // try {
+    //   NativeModules.RCTDevMenu.loadBundleByIp();
+    // } catch (error) {
+    //   console.log('调用失败：', error);
+    // }
     try {
-      NativeModules.RCTDevMenu.loadBundleByIp();
+      const CalendarManager = NativeModules.CalendarManager;
+      // console.log(9999, NativeModules.CalendarManager)
+      CalendarManager.addEvent(
+        'Birthday Party',
+        '4 Privet Drive, Surrey'
+      );
     } catch (error) {
-      console.log('调用失败：', error);
+      console.log("ccccc", error);
     }
   }
 
