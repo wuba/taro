@@ -9,3 +9,10 @@
   margin-top: 30px;
 }
 
+.components-page {
+  padding-bottom: 80px;
+  &__body {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
