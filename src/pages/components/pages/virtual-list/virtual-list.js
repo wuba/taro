@@ -64,7 +64,7 @@ export default class PageView extends React.Component {
           itemSize={100}
           // onScrollNative={this.onScrollNative}
           // onScroll={this.onScroll}
-          overscanCount={1}
+          overscanCount={5}
           scrollWithAnimation
         >
           {Row}
