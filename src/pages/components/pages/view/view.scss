@@ -1,5 +1,3 @@
-@import '../../../../styles/mixins.scss';
-
 .example {
   margin-bottom: 60px;
 
@@ -31,26 +29,4 @@
 
 .example-body__list-item{
   flex: 1;
-}
-
-
-.demo-text-1 {
-  background-color: $color-brand;
-}
-.demo-text-2 {
-  background-color: $color-brand-light;
-}
-.demo-text-3 {
-  background-color: $color-brand-dark;
-}
-
-.example {
-  margin: 40px;
-  &-header {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  &-body {
-
-  }
 }
