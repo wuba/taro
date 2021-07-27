@@ -35,9 +35,9 @@ export default class PageView extends React.Component {
                 }}
                 className='example-body__scroll-view example-body__scroll-view--H'
               >
-                <View className='example-body__scroll-view-item demo-text-1'></View>
-                <View className='example-body__scroll-view-item demo-text-2'></View>
-                <View className='example-body__scroll-view-item demo-text-3'></View>
+                <View className='example-body__scroll-view--H-item demo-text-1'></View>
+                <View className='example-body__scroll-view--H-item demo-text-2'></View>
+                <View className='example-body__scroll-view--H-item demo-text-3'></View>
               </ScrollView>
             </View>
           </View>
@@ -72,7 +72,7 @@ export default class PageView extends React.Component {
               >
                 {
                   this.state.list.map((item, index) => {
-                    return <View key={index} className={`example-body__scroll-view-item demo-text-${(index + 1) % 3 || 3}`}>{item}</View>
+                    return <View key={index} className={`example-body__scroll-view--V-item demo-text-${(index + 1) % 3 || 3}`}>{item}</View>
                   })
                 }
               </ScrollView>
