@@ -74,7 +74,12 @@ export default class Index extends Component<never, any> {
           id: "media",
           name: "媒体组件",
           open: false,
-          pages: ["image", "audio", "video", "camera"]
+          pages: [
+            "image",
+            // "audio", 已废弃
+            "video",
+            "camera"
+          ]
         },
         {
           id: "map",

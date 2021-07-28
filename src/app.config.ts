@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-23 15:53:32
+ * @LastEditTime: 2021-07-28 11:07:44
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -16,6 +16,7 @@ export default {
     'pages/components/pages/progress/progress',
     'pages/components/pages/image/image',
     // 'pages/components/pages/audio/audio',
+    'pages/components/pages/camera/camera',
     'pages/components/pages/video/video',
     'pages/components/pages/swiper/swiper',
     'pages/components/pages/form/form',
