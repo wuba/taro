@@ -50,6 +50,7 @@
     "@react-native-community/picker": "^1.8.1",
     "@react-native-community/slider": "4.0.0-rc.1",
     "@react-native-community/viewpager": "^4.2.2",
+    "@sentry/react-native": "^2.6.0",
     "@tarojs/components": "3.3.0",
     "@tarojs/react": "3.3.0",
     "@tarojs/runtime": "3.3.0",
