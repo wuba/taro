@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:39
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-26 14:52:41
+ * @LastEditTime: 2021-07-28 18:31:21
  * @FilePath: /taro-react-native/src/pages/about/index.tsx
  */
 import { Component, Fragment } from 'react'
@@ -21,16 +21,18 @@ export default class Index extends Component<any, any> {
         })
       }
     },
-    {
-      name: 'Apache 软件基金会',
-      onPress: () => {
-        Taro.showToast({ title: '敬请期待', icon: 'none' });
-      }
-    },
+    // {
+    //   name: 'Apache 软件基金会',
+    //   onPress: () => {
+    //     Taro.showToast({ title: '敬请期待', icon: 'none' });
+    //   }
+    // },
     {
       name: '官方交流群',
       onPress: () => {
-        Taro.showToast({ title: '敬请期待', icon: 'none' });
+        Taro.navigateTo({
+          url: '/pages/webview/index?title=官方交流群&link=https://github.com/NervJS/taro/issues/198',
+        })
       }
     },
     {
@@ -89,9 +91,9 @@ export default class Index extends Component<any, any> {
               )
             })}
           </View>
-          <View className='page-footer'>
+          {/* <View className='page-footer'>
             <Text className='page-footer-text'>Copyright(c) XXXXXXXXXXXXXXXXXXXXXX</Text>
-          </View>
+          </View> */}
         </View>
       </SafeAreaView>
     )
