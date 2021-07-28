@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-28 15:25:48
+ * @LastEditTime: 2021-07-28 16:03:21
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -76,6 +76,9 @@ export default class Index extends Component<never, any> {
             }, {
               id: "scroll",
               name: "滚动",
+            }, {
+              id: "window",
+              name: "窗口"
             }
           ]
         },
