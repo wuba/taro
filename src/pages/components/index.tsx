@@ -81,16 +81,16 @@ export default class Index extends Component<never, any> {
             "camera"
           ]
         },
-        {
-          id: "map",
-          name: "地图",
-          pages: ["map"]
-        },
-        {
-          id: "canvas",
-          name: "画布",
-          pages: ["canvas"]
-        }
+        // {
+        //   id: "map",
+        //   name: "地图",
+        //   pages: ["map"]
+        // },
+        // {
+        //   id: "canvas",
+        //   name: "画布",
+        //   pages: ["canvas"]
+        // }
       ]
     };
   }
