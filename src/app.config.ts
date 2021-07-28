@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-28 11:07:44
+ * @LastEditTime: 2021-07-28 11:58:44
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -46,6 +46,7 @@ export default {
     'pages/apis/pages/surface/interactive/index',
     'pages/apis/pages/surface/navigationBar/index',
     'pages/apis/pages/surface/background/index',
+    'pages/apis/pages/surface/refresh/index',
     // api 相关 end
     'pages/about/index',
     'pages/webview/index',

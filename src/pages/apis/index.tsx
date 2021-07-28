@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-21 10:32:51
+ * @LastEditTime: 2021-07-28 14:23:40
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -70,6 +70,9 @@ export default class Index extends Component<never, any> {
             }, {
               id: "background",
               name: "背景"
+            }, {
+              id: "refresh",
+              name: "下拉刷新",
             }
           ]
         },
@@ -116,7 +119,6 @@ export default class Index extends Component<never, any> {
   };
 
   goToComponent = (page: { url: string }) => {
-    console.log(99, page)
     Taro.navigateTo({
       url: page.url
     });
