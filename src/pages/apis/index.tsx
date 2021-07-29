@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-29 10:17:15
+ * @LastEditTime: 2021-07-29 11:55:39
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -20,7 +20,7 @@ import canvasPng from "../asset/component/canvas.png";
 import "./index.scss";
 
 const PNGS = {
-  surfacePng,
+  // surfacePng,
   contentPng,
   formPng,
   navPng,
@@ -94,10 +94,15 @@ export default class Index extends Component<never, any> {
           ]
         },
         {
-          id: "",
+          id: "storage",
           name: "数据缓存",
           open: false,
-          pages: []
+          pages: [
+            {
+              id: "index",
+              name: "Storage"
+            }
+          ]
         },
         {
           id: "media",
