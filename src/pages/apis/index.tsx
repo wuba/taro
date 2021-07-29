@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-29 11:55:39
+ * @LastEditTime: 2021-07-29 16:34:35
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -10,9 +10,9 @@ import { Component } from 'react'
 import { View, Text, Image } from '@tarojs/components'
 import logo from "../asset/component/logo.png";
 import surfacePng from "../asset/component/view.png";
-import contentPng from "../asset/component/content.png";
-import formPng from "../asset/component/form.png";
-import navPng from "../asset/component/nav.png";
+import basicPng from "../asset/component/content.png";
+import storagePng from "../asset/component/form.png";
+import networkPng from "../asset/component/nav.png";
 import mediaPng from "../asset/component/media.png";
 import mapPng from "../asset/component/map.png";
 import canvasPng from "../asset/component/canvas.png";
@@ -20,10 +20,10 @@ import canvasPng from "../asset/component/canvas.png";
 import "./index.scss";
 
 const PNGS = {
-  // surfacePng,
-  contentPng,
-  formPng,
-  navPng,
+  surfacePng,
+  basicPng,
+  storagePng,
+  networkPng,
   mediaPng,
   mapPng,
   canvasPng
