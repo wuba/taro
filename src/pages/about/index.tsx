@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:39
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-29 11:57:43
+ * @LastEditTime: 2021-07-29 16:20:04
  * @FilePath: /taro-react-native/src/pages/about/index.tsx
  */
 import { Component, Fragment } from 'react'
@@ -13,6 +13,14 @@ import './index.scss';
 
 export default class Index extends Component<any, any> {
   linksList = [
+    {
+      name: '项目源码',
+      onPress: () => {
+        Taro.navigateTo({
+          url: '/pages/webview/index?title=项目源码&link=https://github.com/wuba/taro-react-native/tree/playground'
+        })
+      },
+    },
     {
       name: 'Taro 官方网站',
       onPress: () => {
@@ -58,7 +66,7 @@ export default class Index extends Component<any, any> {
           url: '/pages/webview/index?title=常见问题&link=https://github.com/NervJS/taro/issues'
         })
       },
-    }
+    },
   ];
 
   render() {
