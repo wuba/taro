@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-29 16:34:35
+ * @LastEditTime: 2021-07-29 16:48:21
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -108,7 +108,12 @@ export default class Index extends Component<never, any> {
           id: "media",
           name: "媒体",
           open: false,
-          pages: []
+          pages: [
+            {
+              id: "image",
+              name: "图片"
+            }
+          ]
         },
         {
           id: "map",
