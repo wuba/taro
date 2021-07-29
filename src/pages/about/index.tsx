@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:39
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-28 18:31:21
+ * @LastEditTime: 2021-07-29 11:57:43
  * @FilePath: /taro-react-native/src/pages/about/index.tsx
  */
 import { Component, Fragment } from 'react'
@@ -55,7 +55,7 @@ export default class Index extends Component<any, any> {
       name: '常见问题',
       onPress: () => {
         Taro.navigateTo({
-          url: '/pages/webview/index?link=https://github.com/wuba/taro-react-native/issues'
+          url: '/pages/webview/index?title=常见问题&link=https://github.com/NervJS/taro/issues'
         })
       },
     }
