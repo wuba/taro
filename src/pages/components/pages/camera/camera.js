@@ -6,8 +6,6 @@ import "./camera.scss";
 import Header from "../../components/head/head";
 
 export default class PageView extends React.Component {
-  cameraContext;
-  ref = React.createRef();
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +14,8 @@ export default class PageView extends React.Component {
       videoUrl: ""
     };
   }
+  ref = React.createRef();
+  cameraContext;
 
   handleError() {
     alert("您的浏览器不允许使用摄像头");
