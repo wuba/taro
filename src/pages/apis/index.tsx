@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-02 15:10:00
+ * @LastEditTime: 2021-08-02 16:21:23
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -26,7 +26,7 @@ const PNGS = {
   networkPng,
   mediaPng,
   mapPng,
-  canvasPng
+  canvasPng,
 };
 export default class Index extends Component<never, any> {
   constructor(props: never) {
@@ -127,6 +127,17 @@ export default class Index extends Component<never, any> {
           open: false,
           pages: []
         },
+        {
+          id: "device",
+          name: "设备",
+          open: false,
+          pages: [
+            {
+              id: "vibrate",
+              name: "震动",
+            }
+          ]
+        }
       ]
     }
   }
