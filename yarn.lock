@@ -2945,10 +2945,10 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.4.tgz#cd667bcfdd025213aafb7ca5915a932590acdcdc"
   integrity sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==
 
-"@types/react-reconciler@0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.26.1.tgz#67453664cae44af30e566b440b9f21ec2f1fb041"
-  integrity sha512-jeizEH5o/k6tv42RYNbaulR9KvoSM4RAUq1Q2SXd2HZ7dqgTxN9OIf+GU/sErT7CohB/mUxy9hSjaRLiCPGF5w==
+"@types/react-reconciler@0.26.3":
+  version "0.26.3"
+  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.26.3.tgz#7dfc36262a9084fb39d0308dbff92490b2e95d88"
+  integrity sha512-9U6oMpB9pzurW4oqqLVVArPa8OcfnYZV56/O5ktsyxhJc79ijmJjoa5r5JuElRKWCVHM5xW7rIDXf/7AzVp1ow==
   dependencies:
     "@types/react" "*"
 
