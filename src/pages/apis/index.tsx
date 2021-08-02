@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-07-29 16:48:21
+ * @LastEditTime: 2021-08-02 14:26:36
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -112,6 +112,9 @@ export default class Index extends Component<never, any> {
             {
               id: "image",
               name: "图片"
+            }, {
+              id: "video",
+              name: "视频"
             }
           ]
         },
