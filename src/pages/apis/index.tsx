@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-02 16:39:35
+ * @LastEditTime: 2021-08-02 16:53:46
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -133,6 +133,9 @@ export default class Index extends Component<never, any> {
           open: false,
           pages: [
             {
+              id: "network",
+              name: "网络"
+            }, {
               id: "phone",
               name: "电话",
             }, {
