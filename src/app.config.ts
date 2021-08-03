@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-02 16:53:06
+ * @LastEditTime: 2021-08-03 11:09:45
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -56,6 +56,8 @@ export default {
     'pages/apis/pages/media/camera/index',
     'pages/apis/pages/device/network/index',
     'pages/apis/pages/device/phone/index',
+    'pages/apis/pages/device/accelerometer/index',
+    'pages/apis/pages/device/gyroscope/index',
     'pages/apis/pages/device/scanCode/index',
     'pages/apis/pages/device/vibrate/index',
     // api 相关 end
