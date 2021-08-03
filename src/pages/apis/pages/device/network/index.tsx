@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-08-02 15:44:28
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-02 17:44:55
+ * @LastEditTime: 2021-08-03 15:40:10
  * @FilePath: /taro-react-native/src/pages/apis/pages/device/network/index.tsx
  */
 import Taro from "@tarojs/taro-rn";
@@ -67,6 +67,17 @@ const Index = () => {
           }}
         >
           Taro.offNetworkStatusChange()
+        </Button>
+        <Button
+          type="primary"
+          className="api-page-btn-success"
+          onClick={() => {
+            Taro.getNetworkType().then(res => {
+              Taro.showToast({ title: '网络状态：' + res.networkType, icon: 'none' })
+            })
+          }}
+        >
+          Taro.getNetworkType()
         </Button>
       </View>
     </View>
