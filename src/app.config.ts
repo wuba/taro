@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-03 11:48:40
+ * @LastEditTime: 2021-08-03 17:18:35
  * @FilePath: /taro-react-native/src/app.config.ts
  */
 export default {
@@ -49,6 +49,7 @@ export default {
     'pages/apis/pages/surface/refresh/index',
     'pages/apis/pages/surface/scroll/index',
     'pages/apis/pages/surface/window/index',
+    'pages/apis/pages/surface/keyboard/index',
     'pages/apis/pages/network/request/index',
     'pages/apis/pages/storage/index/index',
     'pages/apis/pages/media/image/index',

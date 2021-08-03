@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-03 11:49:00
+ * @LastEditTime: 2021-08-03 17:20:56
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -79,6 +79,9 @@ export default class Index extends Component<never, any> {
             }, {
               id: "window",
               name: "窗口"
+            }, {
+              id: "keyboard",
+              name: "键盘"
             }
           ]
         },
