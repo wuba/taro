@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-03 11:09:58
+ * @LastEditTime: 2021-08-03 11:11:14
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -141,6 +141,9 @@ export default class Index extends Component<never, any> {
             }, {
               id: "accelerometer",
               name: "加速计",
+            }, {
+              id: "deviceMotion",
+              name: "设备方向",
             }, {
               id: "gyroscope",
               name: "陀螺仪",
