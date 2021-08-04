@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-03 18:58:00
+ * @LastEditTime: 2021-08-04 17:37:36
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -27,6 +27,7 @@ const PNGS = {
   mediaPng,
   locationPng,
   canvasPng,
+  devicePng: canvasPng
 };
 export default class Index extends Component<never, any> {
   constructor(props: never) {
