@@ -2,11 +2,10 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:39
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-04 14:54:03
+ * @LastEditTime: 2021-08-04 14:57:41
  * @FilePath: /taro-react-native/src/pages/about/index.tsx
  */
 import { Component, Fragment } from 'react'
-import { SafeAreaView } from 'react-native';
 import Taro from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
 import './index.scss';

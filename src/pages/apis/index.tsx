@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 15:54:35
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-03 17:20:56
+ * @LastEditTime: 2021-08-03 18:58:00
  * @FilePath: /taro-react-native/src/pages/apis/index.tsx
  */
 import Taro from "@tarojs/taro";
@@ -14,7 +14,7 @@ import basicPng from "../asset/component/content.png";
 import storagePng from "../asset/component/form.png";
 import networkPng from "../asset/component/nav.png";
 import mediaPng from "../asset/component/media.png";
-import mapPng from "../asset/component/map.png";
+import locationPng from "../asset/component/map.png";
 import canvasPng from "../asset/component/canvas.png";
 
 import "./index.scss";
@@ -25,7 +25,7 @@ const PNGS = {
   storagePng,
   networkPng,
   mediaPng,
-  mapPng,
+  locationPng,
   canvasPng,
 };
 export default class Index extends Component<never, any> {
@@ -125,10 +125,15 @@ export default class Index extends Component<never, any> {
           ]
         },
         {
-          id: "map",
+          id: "location",
           name: "位置",
           open: false,
-          pages: []
+          pages: [
+            {
+              id: "index",
+              name: "Location"
+            }
+          ]
         },
         {
           id: "device",
