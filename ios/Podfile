@@ -23,6 +23,7 @@ target 'taroDemo' do
   post_install do |installer|
     find_and_replace("../node_modules/react-native/React/CoreModules/RCTDevLoadingView.mm","[self showOfflineMessage];","")
     find_and_replace("../node_modules/react-native/React/Base/RCTDefines.h","#define RCT_DEV 0", "#define RCT_DEV 1")
+    find_and_replace("../node_modules/react-native/React/Base/RCTKeyCommands.m", "#if RCT_DEV", "#if DEBUG")
     react_native_post_install(installer)
   end
 end
