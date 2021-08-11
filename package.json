@@ -86,7 +86,7 @@
     "@types/webpack-dev-server": "3.11.3",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
-    "@vue/compiler-core": "3.0.0",
+    "@vue/compiler-core": "3.2.1",
     "@vue/runtime-core": "3.0.0",
     "@vue/runtime-dom": "3.0.0",
     "@wojtekmaj/enzyme-adapter-react-17": "0.6.1",
