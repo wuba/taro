@@ -44,6 +44,11 @@
         padding-left: 20px;
         padding-right: 20px;
         background-color: #ffffff;
+        &-input {
+            flex: 1;
+            margin-right: 50px;
+            font-size: $font-size-xl;
+        }
         &-icon {
             height: 40px;
             width: 40px;

@@ -2,7 +2,7 @@
  * @Author: iChengbo
  * @Date: 2021-07-19 14:37:08
  * @LastEditors: iChengbo
- * @LastEditTime: 2021-08-12 17:25:51
+ * @LastEditTime: 2021-08-12 17:49:04
  * @FilePath: /taro-react-native/src/pages/home/index.tsx
  */
 import { Component, Fragment } from 'react';
@@ -136,7 +136,7 @@ export default class Index extends Component<any, any> {
               placeholder='请输入IP:8081'
               value={inputValue}
               onInput={this._onInputChange}
-              style={{ height: 50, fontSize: 18, flex: 1 }}
+              className='load-header-input'
             ></Input>
             <Image
               src={require('../../assets/common/icon_scan.png')}
