@@ -3692,10 +3692,10 @@ anymatch@^3.0.0, anymatch@^3.0.3, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apachelp@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/apachelp/-/apachelp-0.4.0.tgz#333100d3727880f6b0f536062973cab7a78c201b"
-  integrity sha512-aiHv8XdIIBiMGr/dZZ85bwVbGWpn9jbhEln6jj6rc7NZSnHX7wFFLCX8hsNKNh3veat2U8ZEamTecGMn6Lks5g==
+apachelp@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/apachelp/-/apachelp-0.5.0.tgz#344c883e4b4cf0d499497f235cac1e9f4f0a9752"
+  integrity sha512-OrAG0FqnhVyS+UQFJ9n3sGHb/ysVtg+2tqSzfOXjtRoRlKC6XQPh+cr4IWjcSFhQtmSGHkmn/FEiduJeJJN8kA==
   dependencies:
     chalk "^4.1.1"
     minimist "^1.2.5"
