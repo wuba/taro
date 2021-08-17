@@ -65,10 +65,10 @@ export default class PageCheckbox extends React.Component {
             </View>
             <View className='example-body simple-box'>
               <Checkbox value='选中' checked>
-                选中
+                {/* 选中 */}
               </Checkbox>
               <Checkbox style='margin-left: 20px' value='未选中'>
-                未选中
+                {/* 未选中 */}
               </Checkbox>
             </View>
           </View>
@@ -94,7 +94,7 @@ export default class PageCheckbox extends React.Component {
                             value={item.value}
                             checked={item.checked}
                           >
-                            {item.text}
+                            {/* {item.text} */}
                           </Checkbox>
                         </Label>
                       )
