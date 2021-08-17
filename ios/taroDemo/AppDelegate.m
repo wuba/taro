@@ -37,6 +37,13 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  NSDictionary *oldSettins = [[NSUserDefaults standardUserDefaults] valueForKey:@"RCTDevMenu"];
+  if ([oldSettins.allKeys containsObject:@"isDebuggingRemotely"]) {
+    NSMutableDictionary *settings = oldSettins?[oldSettins mutableCopy]:[NSMutableDictionary dictionary];
+    [settings removeObjectForKey:@"isDebuggingRemotely"];
+    [[NSUserDefaults standardUserDefaults] setObject:settings forKey:@"RCTDevMenu"];
+  }
+  
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif
