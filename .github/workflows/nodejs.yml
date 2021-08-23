@@ -51,6 +51,8 @@ jobs:
       run: yarn run bootstrap:lerna
     - name: lint
       run: yarn run lint
+    - name: license
+      run: yarn license
     - name: build
       run: yarn run build
     - name: test
