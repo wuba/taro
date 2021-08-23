@@ -52,7 +52,7 @@ jobs:
     - name: lint
       run: yarn run lint
     - name: license
-      run: yarn license
+      run: yarn license --nosilent # --nosilent means to throw an error when exists no preamble license file.
     - name: build
       run: yarn run build
     - name: test
