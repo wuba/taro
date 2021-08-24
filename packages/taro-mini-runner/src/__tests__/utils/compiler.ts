@@ -82,7 +82,7 @@ export async function compile (app: string, customConfig: Partial<IBuildConfig> 
   }
 
   if (!customConfig.buildAdapter) {
-    const program = new Weapp({ helper } as any, {})
+    const program = new Weapp({ helper } as any, {}, {} as any)
     customConfig.globalObject = program.globalObject
     customConfig.fileType = program.fileType
     customConfig.template = program.template

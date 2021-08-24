@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "assets": "cpy \"**/*.png\" \"../dist/\" --cwd=src --parents",
-    "build": "rimraf ./dist && tsc && yarn assets && yarn script",
+    "build": "rimraf ./dist && yarn script && tsc && yarn assets",
     "dev": "yarn assets && tsc --watch",
     "lint": "eslint .",
     "test": "jest --silent",

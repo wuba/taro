@@ -1,10 +1,7 @@
-// eslint-disable-next-line
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs')
-// eslint-disable-next-line
 const path = require('path')
-// eslint-disable-next-line
 const parser = require('@babel/parser')
-// eslint-disable-next-line
 const traverse = require('@babel/traverse').default
 
 const code = fs.readFileSync(path.resolve(__dirname, '../src/api/index.ts')).toString()
@@ -19,7 +16,10 @@ traverse(ast, {
   }
 })
 
-const output = `// 由 getApiList.js 脚本生成, 不要进行手动修改\nmodule.exports = ${JSON.stringify(apiList, null, 2).replace(/"/g, "'")}\n`
+const comment = ast.comments.find(cmt => cmt.value.includes('Licensed to the'))
+const license = comment ? `/*${comment.value}*/\n` : ''
+
+const output = `${license}// 由 getApiList.js 脚本生成, 不要进行手动修改\nmodule.exports = ${JSON.stringify(apiList, null, 2).replace(/"/g, "'")}\n`
 fs.writeFileSync(path.resolve(__dirname, '../apiList.js'), output)
 
 console.log('done: generate native api list to taro-rn/apiList.js\n')
