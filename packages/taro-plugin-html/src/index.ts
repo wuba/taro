@@ -17,7 +17,6 @@
 * under the License.
 */
 
-
 import type { IPluginContext, TaroPlatformBase } from '@tarojs/service'
 import { isArray, isString } from '@tarojs/shared'
 import * as path from 'path'

@@ -17,7 +17,6 @@
 * under the License.
 */
 
-
 import { initNativeApi } from './apis'
 
 export { initNativeApi }
