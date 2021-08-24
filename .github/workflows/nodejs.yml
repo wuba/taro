@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - next
-      - feat/use-h5
+      - feat/apache-license
   pull_request:
     branches:
       - next
