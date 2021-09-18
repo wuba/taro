@@ -77,7 +77,7 @@
     "css-to-react-native-transform": "^1.4.0",
     "download-git-repo": "^2.0.0",
     "ejs": "^2.6.1",
-    "envinfo": "^6.0.1",
+    "envinfo": "^7.8.1",
     "eslint": "^6.1.0",
     "eslint-config-taro": "3.3.9",
     "eslint-plugin-import": "^2.8.0",
