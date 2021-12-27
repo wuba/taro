@@ -1,4 +1,5 @@
 import path from 'path'
+import * as fs from 'fs'
 import transformCSS from 'taro-css-to-react-native'
 import { recursiveMerge, printLog, processTypeEnum } from '@tarojs/helper'
 
@@ -245,6 +246,13 @@ export default class StyleTransform {
       .replace(/"(scalePx2dp\(.*?\))"/g, '$1')
 
     // 注入自适应方法 scalePx2dp
-    return getWrapedCSS(css)
+    const code = getWrapedCSS(css)
+    const file = path.join('rn_temp', filename)
+    fs.mkdir(path.dirname(file), { recursive: true }, () => {
+      fs.writeFile(file, code, 'utf8', () => {
+        printLog(processTypeEnum.GENERATE, '样式文件', file)
+      })
+    })
+    return code
   }
 }

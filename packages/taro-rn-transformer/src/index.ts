@@ -1,5 +1,7 @@
 import * as path from 'path'
+import * as fs from 'fs'
 import appLoader, { getAppPages } from './app'
+import { printLog, processTypeEnum } from '@tarojs/helper'
 import componentLoader from './page'
 import { TransformType, globalAny } from './types/index'
 import { isPageFile, getCommonStyle, isSourceComponent, isNPMComponent } from './utils'
@@ -17,6 +19,8 @@ module.exports.transform = function ({ src, filename, options }: TransformType) 
     const pages = getAppPages(appPath)
     globalAny.__taroAppPages = pages.map(item => sourceDir + item)
   }
+  let loaded = ''
+  let fileType = ''
 
   if (options.isEntryFile(filename)) {
     code = appLoader({
@@ -32,12 +36,31 @@ module.exports.transform = function ({ src, filename, options }: TransformType) 
         828: 1.81 / 2
       }
     })
+    loaded = 'index.tsx'
+    fileType = '入口文件'
   } else if (isPageFile(filename, sourceDir) || isSourceComponent(filename, code, sourceDir) || isNPMComponent(filename, code, options?.rn)) {
     code = componentLoader({
       projectRoot: options.projectRoot,
       sourceCode: src,
       sourceDir: sourceDir,
       filename
+    })
+    loaded = filename
+    fileType = '页面文件'
+  } else if (!filename.startsWith('node_modules')) {
+    loaded = filename
+    if (filename.endsWith('.config.ts') || filename.endsWith('.config.js')) {
+      fileType = '页面配置'
+    } else {
+      fileType = '其他文件'
+    }
+  }
+  if (loaded) {
+    const file = path.join('rn_temp', loaded)
+    fs.mkdir(path.dirname(file), { recursive: true }, () => {
+      fs.writeFile(file, code, 'utf8', () => {
+        printLog(processTypeEnum.GENERATE, fileType, loaded)
+      })
     })
   }
 
