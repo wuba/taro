@@ -55,8 +55,9 @@ module.exports.transform = function ({ src, filename, options }: TransformType) 
       fileType = '其他文件'
     }
   }
-  if (loaded) {
-    const file = path.join('rn_temp', loaded)
+  const { enable = false, outputRoot = 'rn_temp' } = options.rn?.temp || {}
+  if (enable && loaded) {
+    const file = path.join(outputRoot, loaded)
     fs.mkdir(path.dirname(file), { recursive: true }, () => {
       fs.writeFile(file, code, 'utf8', () => {
         printLog(processTypeEnum.GENERATE, fileType, loaded)

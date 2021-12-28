@@ -3,6 +3,7 @@ import getMetroConfig from './config'
 import { getRNConfigEntry } from './config/config-holder'
 import { getOpenHost, PLAYGROUNDINFO } from './utils'
 import preview from './config/preview'
+import tempGenerate from './generate'
 
 import { PLATFORMS } from '@tarojs/helper'
 import * as path from 'path'
@@ -108,6 +109,8 @@ export default async function build (appPath: string, config: any): Promise<any>
     }
     if (error instanceof Error) throw error
   }
+
+  tempGenerate(config)
 
   if (config.isWatch) {
     if (!metroConfig.server || (metroConfig.server.useGlobalHotkey === undefined)) {

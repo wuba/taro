@@ -247,12 +247,15 @@ export default class StyleTransform {
 
     // 注入自适应方法 scalePx2dp
     const code = getWrapedCSS(css)
-    const file = path.join('rn_temp', filename)
-    fs.mkdir(path.dirname(file), { recursive: true }, () => {
-      fs.writeFile(file, code, 'utf8', () => {
-        printLog(processTypeEnum.GENERATE, '样式文件', file)
+    const { enable = false, outputRoot = 'rn_temp' } = options.rn?.temp || {}
+    if (enable) {
+      const file = path.join(outputRoot, filename)
+      fs.mkdir(path.dirname(file), { recursive: true }, () => {
+        fs.writeFile(file, code, 'utf8', () => {
+          printLog(processTypeEnum.GENERATE, '样式文件', file)
+        })
       })
-    })
+    }
     return code
   }
 }

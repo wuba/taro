@@ -5,7 +5,8 @@ export interface TransformOptions {
   platform: 'android' | 'ios'
   projectRoot: string
   publicPath: string
-  customTransformOptions: any
+  customTransformOptions: any,
+  rn?: Record<string, any>,
 }
 
 export const enum LogLevelEnum {

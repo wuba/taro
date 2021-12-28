@@ -22,7 +22,10 @@ const transform = ({ src, filename, options, plugins }) => {
     {
       test: /\.(css|scss|sass|less|styl|stylus|pcss)/,
       transformer: '@tarojs/rn-style-transformer',
-      configOpt: { config: config }
+      configOpt: {
+        config,
+        rn: rnConfig
+      }
     },
     {
       test: /\.(svg|svgx)/, // .svg 文件仅在 enableSvgTransform 为 true 才会生效
