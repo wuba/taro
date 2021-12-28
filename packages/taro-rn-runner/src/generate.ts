@@ -5,7 +5,9 @@ import { printLog, processTypeEnum } from '@tarojs/helper'
 const METROCONFIG = `
 const Supporter = require('@tarojs/rn-supporter')
 const supporter = new Supporter()
-module.exports = supporter.getMetroConfig()
+module.exports = {
+  resolver: supporter.getResolver()
+}
 `
 
 const BABELCONFIG = `
@@ -19,10 +21,8 @@ module.exports = {
 }
 `
 
-function writeFile (filename: string, content:string, type:string, options: any):void {
-  const {
-    outputRoot = 'rn_temp'
-  } = options.temp || {}
+function writeFile (filename: string, content: string, type: string, options: any): void {
+  const { outputRoot = 'rn_temp' } = options.temp || {}
   const file = path.join(outputRoot, filename)
   fs.mkdir(path.dirname(file), { recursive: true }, () => {
     fs.writeFile(file, content, 'utf8', () => {
@@ -48,9 +48,12 @@ export default function (options: any): void {
     }
     if (copyFiles && copyFiles.length) {
       for (const file of copyFiles) {
-        fs.copyFile(file, path.join(outputRoot, file), (err) => {
-          if (err) console.log(err)
-          printLog(processTypeEnum.GENERATE, '其他文件', file)
+        const distFile = path.join(outputRoot, file)
+        fs.mkdir(path.dirname(distFile), { recursive: true }, () => {
+          fs.copyFile(file, distFile, err => {
+            if (err) console.log(err)
+            printLog(processTypeEnum.GENERATE, '其他文件', distFile)
+          })
         })
       }
     }
