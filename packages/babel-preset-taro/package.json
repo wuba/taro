@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-taro",
-  "version": "3.4.0",
+  "version": "3.4.0-zeta.7",
   "description": "> TODO: description",
   "author": "yuche <i@yuche.me>",
   "homepage": "https://github.com/nervjs/taro/tree/master/packages/babel-preset-taro#readme",
@@ -38,7 +38,7 @@
     "@prefresh/babel-plugin": "^0.4.1",
     "@tarojs/helper": "3.4.0",
     "@tarojs/taro-h5": "3.4.0",
-    "@tarojs/taro-rn": "3.4.0",
+    "@tarojs/taro-rn": "3.4.0-zeta.7",
     "@vue/babel-plugin-jsx": "^1.0.6",
     "@vue/babel-preset-jsx": "^1.2.4",
     "babel-plugin-dynamic-import-node": "2.3.3",
