@@ -57,8 +57,7 @@
     "react-native-root-toast": "^3.0.1",
     "react-native-safe-area-context": "~3.4.1",
     "react-native-stylekit": "^1.0.0",
-    "react-native-syan-image-picker": "0.5.3",
-    "react-native-unimodules": "~0.14.10"
+    "react-native-syan-image-picker": "0.5.3"
   },
   "devDependencies": {
     "@tarojs/taro": "3.4.3",
@@ -67,6 +66,7 @@
     "cpy-cli": "^3.1.1",
     "jest-expo": "^39.0.0",
     "react-native": "^0.67.3",
+    "react-native-unimodules": "~0.14.10",
     "rimraf": "^3.0.0"
   },
   "peerDependencies": {
