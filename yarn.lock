@@ -7365,7 +7365,7 @@
   dependencies:
     compare-versions "^3.4.0"
 
-"@unimodules/react-native-adapter@^6.3.9", "@unimodules/react-native-adapter@~6.3.9":
+"@unimodules/react-native-adapter@~6.3.9":
   version "6.3.9"
   resolved "https://registry.yarnpkg.com/@unimodules/react-native-adapter/-/react-native-adapter-6.3.9.tgz#2f4bef6b7532dce5bf9f236e69f96403d0243c30"
   integrity sha512-i9/9Si4AQ8awls+YGAKkByFbeAsOPgUNeLoYeh2SQ3ddjxJ5ZJDtq/I74clDnpDcn8zS9pYlcDJ9fgVJa39Glw==
