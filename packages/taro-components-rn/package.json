@@ -40,7 +40,7 @@
     "react-native-pager-view": "~5.4.9",
     "react-native-svg": "~12.1.1",
     "react-native-webview": "~11.14.3",
-    "unimodules-permissions-interface": "~5.3.0"
+    "unimodules-permissions-interface": "~6.1.0"
   },
   "devDependencies": {
     "@tarojs/components": "3.4.4",
