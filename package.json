@@ -93,7 +93,7 @@
     "@types/webpack-dev-server": "3.11.3",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
-    "@vue/compiler-core": "3.0.0",
+    "@vue/compiler-core": "3.2.32",
     "@vue/runtime-core": "3.0.0",
     "@vue/runtime-dom": "3.0.0",
     "babel-jest": "24.9.0",
