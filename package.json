@@ -84,7 +84,7 @@
     "@types/lodash": "^4.14.142",
     "@types/node": "13.7.2",
     "@types/react": "^17.0.0",
-    "@types/react-reconciler": "0.26.1",
+    "@types/react-reconciler": "0.26.4",
     "@types/resolve": "1.19.0",
     "@types/sinon": "^7.5.0",
     "@types/tapable": "^1",

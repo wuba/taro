@@ -5648,10 +5648,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-reconciler@0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.26.1.tgz#67453664cae44af30e566b440b9f21ec2f1fb041"
-  integrity sha512-jeizEH5o/k6tv42RYNbaulR9KvoSM4RAUq1Q2SXd2HZ7dqgTxN9OIf+GU/sErT7CohB/mUxy9hSjaRLiCPGF5w==
+"@types/react-reconciler@0.26.4":
+  version "0.26.4"
+  resolved "https://registry.yarnpkg.com/@types/react-reconciler/-/react-reconciler-0.26.4.tgz#651404be172cf29b65cddf246d8d964b4e448399"
+  integrity sha512-bdx4aIBkQRDAnzc23JBFeZmVpmfLJHfHikmQukEt9qs4bQtq9f+PDbNwhR9u74FkIUyIDz1I1qJ8OF6RwadKpw==
   dependencies:
     "@types/react" "*"
 
