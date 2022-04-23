@@ -10711,14 +10711,14 @@ dot-prop@^6.0.1:
   dependencies:
     is-obj "^2.0.0"
 
-download-git-repo@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/download-git-repo/-/download-git-repo-2.0.0.tgz#0af3fe7c92de7d21827522969beeae0d06525a55"
-  integrity sha512-al8ZOwpm/DvCd7XC8PupeuNlC2TrvsMxW3FOx1bCbHNBhP1lYjOn9KnPqnZ3o/jz1vxCC5NHGJA7LT+GYMLcHA==
+download-git-repo@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/download-git-repo/-/download-git-repo-3.0.2.tgz#8caae24fb2abd6453172deea5619036024f190f6"
+  integrity sha512-N8hWXD4hXqmEcNoR8TBYFntaOcYvEQ7Bz90mgm3bZRTuteGQqwT32VDMnTyD0KTEvb8BWrMc1tVmzuV9u/WrAg==
   dependencies:
     download "^7.1.0"
     git-clone "^0.1.0"
-    rimraf "^2.6.3"
+    rimraf "^3.0.0"
 
 download@^7.1.0:
   version "7.1.0"
@@ -13903,6 +13903,11 @@ history@^5.1.0:
   integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
   dependencies:
     "@babel/runtime" "^7.7.6"
+
+hls.js@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/hls.js/-/hls.js-1.1.5.tgz#923a8a8cfdf09542578696d47c8ae435da981ffd"
+  integrity sha512-mQX5TSNtJEzGo5HPpvcQgCu+BWoKDQM6YYtg/KbgWkmVAcqOCvSTi0SuqG2ZJLXxIzdnFcKU2z7Mrw/YQWhPOA==
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
