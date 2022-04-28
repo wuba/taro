@@ -6,9 +6,11 @@
 
 import * as React from 'react'
 import {
-  Text
+  Text,
+  StyleSheet,
 } from 'react-native'
 import { TextProps } from './PropsType'
+import { defaultTextStyle } from '../../utils'
 
 const _Text: React.FC<TextProps> = ({
   style,
@@ -20,7 +22,7 @@ const _Text: React.FC<TextProps> = ({
   return (
     <Text
       selectable={!!selectable}
-      style={style}
+      style={StyleSheet.compose(defaultTextStyle, style)}
       onPress={onClick}
       {...otherProps}
     >

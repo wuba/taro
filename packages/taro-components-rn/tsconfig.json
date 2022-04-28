@@ -6,7 +6,7 @@
   ],
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./dist",
+    "outDir": "/Users/zhiqingchen/ajk/taro-demo/node_modules/@tarojs/components-rn/dist",
     "skipLibCheck": true,
     "sourceMap": true,
     "esModuleInterop": true,

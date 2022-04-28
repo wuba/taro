@@ -2,7 +2,8 @@ import {
   StyleSheet,
   StyleProp,
   ViewStyle,
-  TextStyle
+  TextStyle,
+  PixelRatio
 } from 'react-native'
 
 // @see https://facebook.github.io/react-native/docs/layout-props.html
@@ -80,8 +81,14 @@ export const parseStyles = (styles = ''): { [key: string]: string } => {
 // eslint-disable-next-line
 export const noop = (..._args: any[]): void => {}
 
+export const defaultTextStyle:StyleProp<TextStyle> = {
+  fontSize: PixelRatio.roundToNearestPixel(18),
+  color: 'black',
+}
+
 export default {
   omit,
+  defaultTextStyle,
   dismemberStyle,
   parseStyles,
   noop,
