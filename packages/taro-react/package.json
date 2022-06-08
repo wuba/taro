@@ -26,7 +26,7 @@
   "dependencies": {
     "@tarojs/runtime": "3.4.11",
     "@tarojs/shared": "3.4.11",
-    "react-reconciler": "0.26.1",
+    "react-reconciler": "0.28.0",
     "scheduler": "^0.20.1"
   },
   "publishConfig": {
