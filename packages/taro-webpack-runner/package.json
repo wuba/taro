@@ -50,7 +50,7 @@
     "open": "7.0.2",
     "ora": "4.0.3",
     "postcss": "8.3.5",
-    "postcss-loader": "4.3.0",
+    "postcss-loader": "7.0.0",
     "postcss-plugin-constparse": "3.4.13",
     "postcss-pxtransform": "3.4.13",
     "resolve": "^1.6.0",
